@@ -1,7 +1,14 @@
 <div class="container">
   <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
+    {{ "PAGES.HOME.TITLE" | translate }}
   </h1>
 
-  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
+  <a routerLink="/test-tcp">测试TCP/IP连接</a>
+  <a routerLink="/test-usb">测试USB接口</a>
+  <a routerLink="/test-file">测试文件读取（选取文件）</a>
+  <div>
+    <h3>测试直接打开本地文件管理</h3>
+    <input type="text" placeholder="请输入要打开的文件夹" [(ngModel)]="path" />
+  </div>
+  <button (click)="openFileManagement()">打开文件管理器</button>
 </div>

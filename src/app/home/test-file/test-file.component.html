@@ -1,0 +1,12 @@
+<div class="file-container">
+  <img [src]="mySrc" alt="" />
+  <input
+    matInput
+    type="file"
+    id="file"
+    placeholder="选择文件"
+    (ngModelChange)="getFile($event)"
+    (change)="getFile($event)"
+  />
+  <button (click)="backHome()">回到首页</button>
+</div>

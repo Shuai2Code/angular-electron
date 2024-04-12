@@ -21,6 +21,11 @@
     "mac",
     "linux"
   ],
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  },
   "main": "app/main.js",
   "private": true,
   "scripts": {
