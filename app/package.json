@@ -9,6 +9,8 @@
   "main": "main.js",
   "private": true,
   "dependencies": {
+    "electron-notification-state": "^1.0.4",
+    "electron-windows-notifications": "^3.0.8",
     "install": "^0.13.0"
   }
 }
